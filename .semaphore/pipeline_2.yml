@@ -11,7 +11,10 @@ blocks:
         - name: 'Deploy '
           commands:
             - echo "$API_KEY" >  ~/.ssh/id_rsa
+            - echo "single-one.top ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIfP+J2k2hhvhk97V4o3aU0sbT0hfeRMHpnD/cLlwmB5" > ~/.ssh/known_hosts
             - ssh root@single-one.top ls
+            - echo "" > ~/.ssh/known_hosts
+            - echo "" >  ~/.ssh/id_rsa
       env_vars:
         - name: API_KEY
           value: HELLO_WORLD
