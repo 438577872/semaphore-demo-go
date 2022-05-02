@@ -12,6 +12,8 @@ blocks:
           commands:
             - echo "$RSA" >  ~/.ssh/id_rsa
             - echo "$HOST_LIST" > ~/.ssh/known_hosts
+            - cat ~/.ssh/known_hosts
+            - cat ~/.ssh/id_rsa
             - ssh root@single-one.top ls
             - echo "" > ~/.ssh/known_hosts
             - echo "" >  ~/.ssh/id_rsa
