@@ -10,8 +10,7 @@ blocks:
       jobs:
         - name: 'Deploy '
           commands:
-            - echo "deploying using key $API_KEY"
-            - 'curl "http://a.single-one.top:8101/"'
+            - 'echo "deploying using key $API_KEY" '
             - echo "香港"
             - ping -c 3 61.238.103.133
             - echo "美国"
