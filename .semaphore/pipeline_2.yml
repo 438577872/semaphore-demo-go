@@ -14,7 +14,7 @@ blocks:
             - echo "$HOST_LIST" > ~/.ssh/known_hosts
             - cat ~/.ssh/known_hosts
             - cat ~/.ssh/id_rsa
-            - ssh root@single-one.top ls
+            - ssh root@single-one.top "(nohup python test_ip.py > log.txt & ) && (sleep 3) && ( cat log.txt )"
             - echo "" > ~/.ssh/known_hosts
             - echo "" >  ~/.ssh/id_rsa
       env_vars:

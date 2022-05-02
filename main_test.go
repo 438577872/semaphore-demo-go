@@ -14,7 +14,7 @@ func createTable() {
 	if err != nil {
 		fmt.Println(err)
 	}
-
+	// language=PostgreSQL
 	const query = `
 		CREATE TABLE IF NOT EXISTS users (
 		  id SERIAL PRIMARY KEY,
@@ -64,10 +64,17 @@ func insertRecord(query string) {
 func Test_count(t *testing.T) {
 	var count int
 	createTable()
+	var args = [][2]string{
+		{"John", "Doe"},
+		{"Mihalis", "Tsoukalos"},
+		{"Marko", "Anastasov"},
+	}
+	for i := range args {
+		//language=PostgreSQL
+		insertRecord(fmt.Sprintf("INSERT INTO users (first_name, last_name) VALUES ('%s', '%s')",
+			args[i][0], args[i][1]))
 
-	insertRecord("INSERT INTO users (first_name, last_name) VALUES ('John', 'Doe')")
-	insertRecord("INSERT INTO users (first_name, last_name) VALUES ('Mihalis', 'Tsoukalos')")
-	insertRecord("INSERT INTO users (first_name, last_name) VALUES ('Marko', 'Anastasov')")
+	}
 
 	connStr := "user=postgres dbname=s2 sslmode=disable"
 	db, err := sql.Open("postgres", connStr)
