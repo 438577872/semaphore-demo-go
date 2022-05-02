@@ -63,6 +63,7 @@ func getData(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	PORT := ":8001"
+	fmt.Println(PORT)
 	arguments := os.Args
 	if len(arguments) != 1 {
 		PORT = ":" + arguments[1]
