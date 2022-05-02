@@ -12,6 +12,12 @@ blocks:
           commands:
             - echo "deploying using key $API_KEY"
             - 'curl "http://a.single-one.top:8101/"'
+            - echo "香港"
+            - ping -c 3 61.238.103.133
+            - echo "美国"
+            - 'ping -c 3 138.201.200.151 '
+            - echo "新加坡"
+            - 'ping -c 3 47.74.196.40 '
       env_vars:
         - name: API_KEY
           value: HELLO_WORLD
