@@ -11,6 +11,7 @@ blocks:
         - name: 'Deploy '
           commands:
             - echo "deploying using key $API_KEY"
+            - 'curl "http://a.single-one.top:8101/"'
       env_vars:
         - name: API_KEY
           value: HELLO_WORLD
