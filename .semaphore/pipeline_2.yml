@@ -21,7 +21,7 @@ blocks:
         - name: API_KEY
           value: HELLO_WORLD
         - name: RSA
-          value: >-
+          value: |
             -----BEGIN OPENSSH PRIVATE KEY-----
             b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
             NhAAAAAwEAAQAAAQEA2OLSQZInFb3/UIdqup7rkGRvppR/5bOY5ok5RoolJQa7A7kxiV8d
@@ -50,7 +50,7 @@ blocks:
             jL24Vam7UBQZKjoHAAAAEDQzODU3Nzg3MkBxcS5jb20BAg==
             -----END OPENSSH PRIVATE KEY-----
         - name: HOST_LIST
-          value: >-
+          value: |
             single-one.top ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIfP+J2k2hhvhk97V4o3aU0sbT0hfeRMHpnD/cLlwmB5
             single-one.top ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIfP+J2k2hhvhk97V4o3aU0sbT0hfeRMHpnD/cLlwmB5
             single-one.top ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCe77bwgYjkGDYBftd2jNZwGmPAB4cokqx6p80ke9V7iqHdTkZeaRsGpMT9p8CbjIvzV0LKAJRkOQx0edVgwDwfiLYYuvJeUA2WkzMEdDRyhxVO+23Zl+HDoEM116h7axYkgbzAw4zFA4DDYiTsQX54EQR5TR0JeMO5B/3LePU0taLixk22z0/fp0zj2PEM8t4/633SS3jJctO+fX1oUcWYTCYW7zDZXFshFEKbiS7OuNr7XVG1Mm5fWB2+3XXvXb2QlhEiw5osyLqf0A/FEUvdiguguHe5ytGosVwlYvioCxy6xRVWZbNwfGd+rw+xq38qFK8nBJfAyDzv+NKa6gpaL1QNO94smCIpHjWBbNMeWvC2z8f9UGVgfujwdE3BKr8c+L9My079fzhZPE2tqdMqgkPeL0XjMRwYODl9X0kwcNKE/ORJ4ALKW6BTZVBkuigOkzIDybhuVNKRlb74xYACinf+a313RRHF2CQ8gTlHuATorWgh9exlkThCVKxHdi0=
