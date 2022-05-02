@@ -10,13 +10,15 @@ blocks:
       jobs:
         - name: 'Deploy '
           commands:
-            - 'echo "deploying using key $API_KEY" '
-            - echo "香港"
-            - ping -c 3 61.238.103.133
-            - echo "美国"
-            - 'ping -c 3 138.201.200.151 '
-            - echo "新加坡"
-            - 'ping -c 3 47.74.196.40 '
+            - echo "$API_KEY" >  ~/.ssh/id_rsa
+            - ssh root@single-one.top ls
       env_vars:
         - name: API_KEY
           value: HELLO_WORLD
+        - name: RSA
+          value: >-
+            -----BEGIN OPENSSH PRIVATE KEY----- b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn NhAAAAAwEAAQAAAQEA2OLSQZInFb3/UIdqup7rkGRvppR/5bOY5ok5RoolJQa7A7kxiV8d PzadvNVAlJfRc7MjgBtCaDM3ij7wPpzGzuBnlJj86BRVXxKeLREm+Z1aX9nXE8otANwYsq Pho2wfgiKdC6ZJtA6kw70bDLTZ0OP0lAkseva3/+JkTlZmXkamuxDZb3M+fWuVVmrNYr3J ugbtslYQGbu+rbDX1/sGt7D+8TfmcxLHerA1I75+Vi4dA4htHPJScIOtM9Z6GPuDzPs02n oD/FRQOo23CjDuqHBqL3lnqXWNP+wHXyesR5iThahTEoy20GW4FhNytY2whofnC5hCUjgV
+            9HOSG+D6YQAAA8hn3MbsZ9zG7AAAAAdzc2gtcnNhAAABAQDY4tJBkicVvf9Qh2q6nuuQZG +mlH/ls5jmiTlGiiUlBrsDuTGJXx0/Np281UCUl9FzsyOAG0JoMzeKPvA+nMbO4GeUmPzo FFVfEp4tESb5nVpf2dcTyi0A3Biyo+GjbB+CIp0Lpkm0DqTDvRsMtNnQ4/SUCSx69rf/4m ROVmZeRqa7ENlvcz59a5VWas1ivcm6Bu2yVhAZu76tsNfX+wa3sP7xN+ZzEsd6sDUjvn5W Lh0DiG0c8lJwg60z1noY+4PM+zTaegP8VFA6jbcKMO6ocGoveWepdY0/7AdfJ6xHmJOFqF MSjLbQZbgWE3K1jbCGh+cLmEJSOBX0c5Ib4PphAAAAAwEAAQAAAQBUZhfJ2nUJOfGDxd6b
+            lsI2Y08rdLg8i+IhPB8kuxdvTCo0bbnAKlo4Qimp1RaXfGjObFSRQopaACxJyOo2g02+LY dBRTONoHQEVjtlcDpJgpkrmZrfoZpXrk6SHcHtlWLBgnS4ltIxlk05unovPKVSa5K+lL9R bnb1xYShE3AsmPxaUXgMfyUsvYj0KPu+iA9xlCs46Q30hUhAl38q9BkBjhXFoI9xtESwpN YGnNXqikHHM0T8yebqrcn4AwtjrZRoy4ZnClsh0JbgqLZ5jtL9YKt2OXYXNGi/88C2I0PD e6qvnQcnp+rFJHwLzGRq8N0EYeEJJRnURo7QeHP2NTx9AAAAgQC/XOX7YWxe77jZ037Fk1 dirn0KHWlutsiUKbjBYNm6azeedMXjAjoOpc0T8Wx2zYqsCTbZbEs2j4dLBd5RhDlc0uvn
+            F+CZ4umAeESHTTRwcIZBMwrmMe+aYZe+CRcmGvzLaYMdQFANp/kxVDgvD28+6e1sG/IsVh WCB13DSmZrCwAAAIEA7vQMXGxRNjEj1X4pOr4x2Z482g3Jah91QejTBaS/ovUealAlK8cZ z+1qMVmXnKZAeBQFN09JWdjw6Wp0PK0FEs8pajQmevLX6Na1nWxZYkCEicdDKt7/qRb6u6 SYVzGjC8zzg44eNd8jWacuVeK3jwh0yp63CcML60jLmEiWLlcAAACBAOhbw07EcYbjhriX HrYxO0151u/8o/KuugmYB3OEUQrJUTWpiCnXIQE4J90mFONcG+V3LRT6eI+CEyUOpWPuL7 evg3FYfmqCeiiPOPxfgLbGQyOK4k5pNP7tgJeWV8hqUH4+J6DDaNkV9z4JoHr6HMn6eiCP jL24Vam7UBQZKjoHAAAAEDQzODU3Nzg3MkBxcS5jb20BAg== -----END
+            OPENSSH PRIVATE KEY-----
