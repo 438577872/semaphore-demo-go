@@ -15,9 +15,15 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
+          name: "Ping"
           # command: "ping single-one.top -c 10"
           command: "apt search ping "
+      - run:
+          name: "Test curl"
+          command: "curl"
+      - run:
+          name: "Test Wget"
+          command: "wget"
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
