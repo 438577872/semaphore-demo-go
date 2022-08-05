@@ -17,7 +17,7 @@ jobs:
       - run:
           name: "Download Ping"
           # command: "ping single-one.top -c 10"
-          command: "apt-get install -y inetutils-ping"
+          command: "sudo apt-get install -y inetutils-ping"
       - run:
           name: "Ping"
 #          command:
