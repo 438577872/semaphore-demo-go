@@ -21,7 +21,7 @@ jobs:
       - run:
           name: "Ping"
 #          command:
-          command: "sudo ping single-one.top -c 10"
+          command: "sudo chmod u+s /bin/ping && sudo ping single-one.top -c 10"
       - run:
           name: "Test curl"
           command: "curl"
